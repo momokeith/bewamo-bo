@@ -1,0 +1,12 @@
+---
+
+- hosts: all
+  become: true
+
+  roles:
+    - kfina.roles/git
+    - kfina.roles/ant
+    - kfina.roles/nginx
+    - kfina.roles/nginx-vhosts
+    - geerlingguy.nodejs
+    - kfina.roles/ng

@@ -1,0 +1,8 @@
+---
+
+vhosts:
+  bo.bewamo:
+    type: default
+    server_names:
+      - bo.staging.bewamo.com
+    root: "{{ web_dir }}/{{ project_name }}/current/dist"

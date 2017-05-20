@@ -1,0 +1,8 @@
+---
+
+vhosts:
+  bo.bewamo:
+    type: default
+    server_names:
+      - bo.bewamo.local
+    root: "{{ web_dir }}/{{ project_name }}/current/dist"

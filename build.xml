@@ -1,0 +1,16 @@
+<project name="bewamo-bo" default="full-build">
+    <target name="full-build" depends="prepare,build"
+            description="Performs static analysis, runs the tests, and generates project documentation"/>
+
+    <target name="prepare"  description="Install dependencies">
+        <exec executable="npm" taskname="npm install">
+            <arg value="install"/>
+        </exec>
+    </target>
+
+    <target name="build"  description="Build project">
+        <exec executable="ng" taskname="ng build">
+            <arg value="build"/>
+        </exec>
+    </target>
+</project>
