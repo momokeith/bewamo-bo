@@ -8,11 +8,13 @@ import {ShopService} from "./shop.service";
     imports: [
         CommonModule,
         RouterModule.forRoot([
-            {
-                path: 'shops',
-                component: ShopComponent
-            }
-        ])
+                {
+                    path: 'shops',
+                    component: ShopComponent
+                }
+            ],
+            {useHash: true}
+        )
     ],
 
     providers: [
