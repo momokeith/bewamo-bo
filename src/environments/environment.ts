@@ -5,5 +5,4 @@
 
 export const environment = {
   production: false,
-  apiBaseUrl: 'http://api.bewamo.local/app_dev.php'
 };

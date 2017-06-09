@@ -4,4 +4,4 @@ git_branch: develop
 
 build_parameters:
  files:
-    - {src: src/environments/environment.ts.dist, dest: src/app/environment.ts }
+    - {src: src/app/config/parameters.ts.dist, dest: src/app/config/parameters.ts }
