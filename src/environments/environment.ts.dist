@@ -1,0 +1,3 @@
+export const environment = {
+  apiBaseUrl: {{ ansible_env.BEWAMO_API_BASEURL }}
+};
