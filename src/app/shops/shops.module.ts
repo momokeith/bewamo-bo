@@ -1,20 +1,13 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ShopComponent} from './shop/shop.component';
-import {RouterModule}   from '@angular/router';
 import {ShopService} from "./shop.service";
+import {ShopsRoutingModule} from "./shops-routing.module";
 
 @NgModule({
     imports: [
         CommonModule,
-        RouterModule.forRoot([
-                {
-                    path: 'shops',
-                    component: ShopComponent
-                }
-            ],
-            {useHash: true}
-        )
+        ShopsRoutingModule
     ],
 
     providers: [
